@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Màu nền dự phòng nếu ảnh không tải được */
+    position: relative; /* Cần thiết để định vị pseudo-element */
+    overflow: hidden; /* Để ngăn cuộn do pseudo-element có thể tràn ra */
+    color:#ffaa00;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/logo.png'); /* Thay thế bằng đường dẫn ảnh của bạn */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1; /* Đặt lớp nền mờ ở phía sau nội dung */
+}
+
+/* Đảm bảo container, header và footer có z-index cao hơn để hiển thị trên nền mờ */
+.container, .header, .footer {
+    z-index: 1;
+}
+
+.welcome-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-button {
+    background-color: #ffaa00;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #fcca66;
+}

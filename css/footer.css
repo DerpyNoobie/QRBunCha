@@ -1,0 +1,9 @@
+.footer {
+    background-color: #ff9900;
+    color: #ffff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    width: 100%;
+    box-sizing: border-box; /* Quan trọng để tính toán kích thước chính xác */
+}
