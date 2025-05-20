@@ -5,5 +5,5 @@
     text-align: center;
     border-top: 1px solid #eee;
     width: 100%;
-    box-sizing: border-box; /* Quan trọng để tính toán kích thước chính xác */
+    box-sizing: border-box; 
 }

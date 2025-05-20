@@ -42,8 +42,6 @@
             total += item.price * item.quantity;
           });
           orderTotalElement.textContent = `Tổng tiền: ${total.toLocaleString()}đ`;
-          // Loại bỏ dòng này để giữ lại thông tin đơn hàng
-          // localStorage.removeItem('currentOrder');
         } else {
           orderItemList.innerHTML = "<p>Không có đơn hàng nào.</p>";
           orderTotalElement.textContent = `Tổng tiền: 0đ`;
@@ -51,11 +49,11 @@
         }
 
         payNowButton.addEventListener("click", function () {
-          window.location.href = "payment.html";
+          window.location.href = "payment.php";
         });
 
         backToMenuButton.addEventListener("click", function () {
-          window.location.href = "index.html";
+          window.location.href = "index.php";
         });
       });
     </script>

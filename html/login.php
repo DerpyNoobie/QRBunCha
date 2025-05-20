@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="vi">
   <head>
@@ -20,7 +24,7 @@
         </div>
         <button type="submit" class="login-button">Đăng nhập</button>
         <p class="signup-link">
-          Chưa có tài khoản? <a href="register.html">Đăng ký</a>
+          Chưa có tài khoản? <a href="register.php">Đăng ký</a>
         </p>
       </form>
     </div>

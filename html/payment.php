@@ -24,7 +24,7 @@
       document
         .getElementById("back-button")
         .addEventListener("click", function () {
-          window.location.href = "order_summary.html";
+          window.location.href = "order_summary.php";
         });
     </script>
   </body>

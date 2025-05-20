@@ -23,8 +23,7 @@ body::before {
 }
 
 .main-content {
-    flex-grow: 1; /* Để nội dung chính chiếm không gian còn lại */
-    /* ... các стили khác ... */
+    flex-grow: 1; 
 }
 
 /* ... phần CSS còn lại cho container, menu, cart-container ... */

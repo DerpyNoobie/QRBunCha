@@ -42,7 +42,7 @@
         </div>
         <button type="submit" class="register-button">Đăng ký</button>
         <p class="login-link">
-          Đã có tài khoản? <a href="login.html">Đăng nhập</a>
+          Đã có tài khoản? <a href="login.php">Đăng nhập</a>
         </p>
       </form>
     </div>
